@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しすたんくん</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <div id="quiz-container">
+    <div id="quiz-header">
+      <h2 id="question">Question text</h2>
+      
+      <form id="quiz-form" name="quizForm">
+        <ul>
+          <li>
+            <input type="radio" id="a" name="answer" value="a" />
+            <label id="a-text" for="a">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="b" name="answer" value="b" />
+            <label id="b-text"  for="b">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="c" name="answer" value="c" />
+            <label id="c-text"  for="c">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="d" name="answer" value="d" />
+            <label id="d-text"  for="d">Question</label>
+          </li>
+        </ul>  
+      </form>
+    </div>
+    
+    <button id="submit">回答する</button>
+
+    <div id="results-container">
+      <div id="results-header">
+        <h2 id="results"></h2>
+        <button id="next-quiz">次の問題へ</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
